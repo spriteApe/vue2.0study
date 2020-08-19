@@ -25,10 +25,10 @@ export default {
 .hello {
   width: 200px;
   height: 200px;
-  font-size: 36px;/* px */
+  font-size: 36px;
   margin: 0 auto;
   box-sizing: border-box;
-  border: 1px solid green;/* no */
+  border: 1px solid green;
 }
 .test{
     font-size: 0.48rem;
