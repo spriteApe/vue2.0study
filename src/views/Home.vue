@@ -36,3 +36,8 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped >
+::v-deep .van-button--danger {
+  background-color: #3a2f08;
+}
+</style>

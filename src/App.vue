@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <keep-alive>
-      <router-view />
-    </keep-alive>
+        <van-button type="danger">危险按钮</van-button>
+    <router-view />
     <div id="nav">
       <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
