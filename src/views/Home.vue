@@ -7,15 +7,12 @@
     <van-button type="danger">危险按钮</van-button>
     <img alt="Vue logo" src="../assets/logo.png" style="width:10rem" />
     {{msg}}
-    <HelloWorld :msg.sync="msg" />
     <p @click="emit">emit</p>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
   created() {
@@ -30,9 +27,6 @@ export default {
     emit() {
       this.$emit("sadasfgweewg", "hello");
     },
-  },
-  components: {
-    HelloWorld,
   },
 };
 </script>

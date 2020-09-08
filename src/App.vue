@@ -1,14 +1,23 @@
 <template>
   <div id="app">
-        <van-button type="danger">危险按钮</van-button>
     <router-view />
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div>
+
+    <tabbar :current.sync='current'/>
   </div>
 </template>
-
+<script>
+import tabbar from '@/components/tabbar'
+export default {
+  data(){
+    return{
+      current:0
+    }
+  },
+  components:{
+    tabbar
+  }
+}
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
