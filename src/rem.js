@@ -17,7 +17,7 @@ function change() {
 	metaEl.setAttribute('content', 'initial-scale=' + scale + ',maximum-scale=' + scale +
 		',minimum-scale=' + scale);
 	var width = html.getBoundingClientRect().width;
-	var rem = width / 10;
+	var rem = width / 7.5;
 	html.style.fontSize = rem + 'px';
 }
 // 防抖
